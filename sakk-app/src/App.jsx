@@ -2,6 +2,7 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import { ChessListPage } from './pages/ChessListPage';
 import { ChessSinglePage } from './pages/ChessSinglePage';
 import { ChessCreatePage } from './pages/ChessCreatePage';
+import { ChessDeletePage } from './pages/ChessDeletePage';
 import './App.css';
 import { ChessModPage } from './pages/ChessMondPage';
 
@@ -21,6 +22,7 @@ export const App = () => {
         <Route path="/chess/:chessId" element={<ChessSinglePage/>}/>
         <Route path="/new-chess" element={<ChessCreatePage/>}/>
         <Route path="/mod-chess/:chessId" element={<ChessModPage/>}/>
+        <Route path="/del-chess/:chessId" element={<ChessDeletePage/>}/>
       </Routes>
     </>
   )
